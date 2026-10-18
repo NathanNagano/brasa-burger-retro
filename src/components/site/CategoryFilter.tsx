@@ -20,10 +20,10 @@ export function CategoryFilter({ categories, active, onChange }: Props) {
             aria-pressed={selected}
             onClick={() => onChange(c.id)}
             className={cn(
-              "shrink-0 rounded-full border px-5 py-2.5 text-sm font-semibold transition-colors",
+              "shrink-0 rounded-full border-2 px-5 py-2 text-sm font-bold uppercase tracking-wider transition-colors",
               selected
-                ? "border-primary bg-primary text-primary-foreground"
-                : "border-border bg-surface text-foreground/80 hover:border-primary/60 hover:text-foreground",
+                ? "border-brown bg-primary text-primary-foreground shadow-glow"
+                : "border-brown/40 bg-card text-foreground hover:border-brown hover:bg-secondary",
             )}
           >
             {c.label}
