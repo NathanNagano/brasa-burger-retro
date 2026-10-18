@@ -7,31 +7,31 @@ export function ContactSection() {
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address.mapsQuery)}`;
 
   return (
-    <section id="contato" aria-labelledby="contato-title" className="border-t bg-surface py-20 md:py-28">
+    <section id="contato" aria-labelledby="contato-title" className="relative border-t-4 border-brown bg-secondary py-20 md:py-28">
       <div className="container-page">
-        <p className="eyebrow">Contato</p>
-        <h2 id="contato-title" className="mt-2 text-4xl text-cream md:text-6xl">Vem pra brasa</h2>
+        <p className="font-script text-2xl text-primary">Contato</p>
+        <h2 id="contato-title" className="mt-2 text-4xl text-foreground md:text-6xl">Vem pra brasa</h2>
         <div className="mt-12 grid gap-6 md:grid-cols-2">
-          <div className="rounded-2xl border bg-background p-6 md:p-8">
+          <div className="rounded-3xl border-2 border-brown bg-card p-6 shadow-retro md:p-8">
             <div className="flex items-center gap-3 text-primary">
               <Clock className="size-5" aria-hidden />
-              <h3 className="text-xl text-cream">Horário de funcionamento</h3>
+              <h3 className="text-xl text-foreground">Horário de funcionamento</h3>
             </div>
             <dl className="mt-6 divide-y">
               {hours.map((h) => (
                 <div key={h.days} className="flex justify-between gap-4 py-3 text-sm">
                   <dt className="text-muted-foreground">{h.days}</dt>
-                  <dd className="font-semibold text-cream">{h.time}</dd>
+                  <dd className="font-semibold text-foreground">{h.time}</dd>
                 </div>
               ))}
             </dl>
           </div>
-          <div className="flex flex-col rounded-2xl border bg-background p-6 md:p-8">
+          <div className="flex flex-col rounded-3xl border-2 border-brown bg-card p-6 shadow-retro md:p-8">
             <div className="flex items-center gap-3 text-primary">
               <MapPin className="size-5" aria-hidden />
-              <h3 className="text-xl text-cream">Endereço</h3>
+              <h3 className="text-xl text-foreground">Endereço</h3>
             </div>
-            <address className="mt-6 not-italic text-cream">
+            <address className="mt-6 not-italic text-foreground">
               {address.street} — {address.district}
               <br />
               {address.city} / {address.state}
@@ -42,7 +42,7 @@ export function ContactSection() {
                 href={mapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3.5 text-sm font-bold uppercase tracking-wider text-primary-foreground"
+                className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-brown bg-primary px-6 py-3.5 shadow-glow text-sm font-bold uppercase tracking-wider text-primary-foreground"
               >
                 <MapPin className="size-4" aria-hidden /> Abrir no mapa
               </a>

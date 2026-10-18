@@ -14,7 +14,7 @@ export function WhatsappButton({ message, className, children = "Pedir pelo What
   const link = buildWhatsappLink(message);
   const [notice, setNotice] = useState(false);
   const base = cn(
-    "inline-flex items-center justify-center gap-2 rounded-lg border border-cream/25 px-6 py-3.5 text-sm font-bold uppercase tracking-wider text-cream transition-colors hover:border-primary hover:text-primary focus-visible:outline-2 focus-visible:outline-ring",
+    "inline-flex items-center justify-center gap-2 rounded-full border-2 border-brown bg-secondary px-6 py-3.5 text-sm font-bold uppercase tracking-wider text-secondary-foreground shadow-glow transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-ring",
     className,
   );
 

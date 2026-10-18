@@ -9,10 +9,10 @@ export function MenuSection() {
   const list = filterProducts(products, active);
 
   return (
-    <section id="cardapio" aria-labelledby="cardapio-title" className="py-20 md:py-28">
+    <section id="cardapio" aria-labelledby="cardapio-title" className="bg-dots py-20 md:py-28">
       <div className="container-page">
-        <p className="eyebrow">Cardápio</p>
-        <h2 id="cardapio-title" className="mt-2 text-4xl text-cream md:text-6xl">Escolha o seu</h2>
+        <p className="font-script text-2xl text-primary">Cardápio</p>
+        <h2 id="cardapio-title" className="mt-2 text-4xl text-foreground md:text-6xl">Escolha o seu</h2>
         <div className="mt-8">
           <CategoryFilter categories={categories} active={active} onChange={setActive} />
         </div>
@@ -26,7 +26,7 @@ export function MenuSection() {
           ) : (
             <div className="flex flex-col items-center rounded-xl border border-dashed py-16 text-center">
               <UtensilsCrossed className="size-10 text-primary" aria-hidden />
-              <p className="mt-4 font-semibold text-cream">Nenhum item nesta categoria por enquanto.</p>
+              <p className="mt-4 font-semibold text-foreground">Nenhum item nesta categoria por enquanto.</p>
               <button type="button" onClick={() => setActive("todos")} className="mt-3 text-sm font-semibold text-primary hover:underline">
                 Ver cardápio completo
               </button>

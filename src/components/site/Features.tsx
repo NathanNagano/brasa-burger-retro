@@ -8,17 +8,17 @@ const features = [
 
 export function Features() {
   return (
-    <section aria-labelledby="diferenciais" className="border-y bg-surface py-16 md:py-20">
+    <section aria-labelledby="diferenciais" className="border-y-4 border-brown bg-primary text-primary-foreground py-16 md:py-20">
       <h2 id="diferenciais" className="sr-only">Nossos diferenciais</h2>
       <div className="container-page grid gap-10 md:grid-cols-3">
         {features.map(({ icon: Icon, title, text }) => (
           <div key={title} className="flex gap-4">
-            <div className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+            <div className="flex size-12 shrink-0 items-center justify-center rounded-full border-2 border-cream bg-secondary text-secondary-foreground">
               <Icon className="size-6" aria-hidden />
             </div>
             <div className="min-w-0">
               <h3 className="text-xl text-cream">{title}</h3>
-              <p className="mt-1 text-sm text-muted-foreground">{text}</p>
+              <p className="mt-1 text-sm text-cream/85">{text}</p>
             </div>
           </div>
         ))}
