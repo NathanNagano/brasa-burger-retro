@@ -7,7 +7,7 @@ export function AboutSection() {
         <img src={comboImg} alt="Imagem ilustrativa de burger com batata e bebida" width={1024} height={1024} loading="lazy" className="aspect-[4/3] w-full rounded-2xl object-cover" />
         <div>
           <p className="eyebrow">Sobre nós</p>
-          <h2 id="sobre-title" className="mt-2 text-4xl text-cream md:text-6xl">Nascida na brasa</h2>
+          <h2 id="sobre-title" className="mt-2 text-4xl text-foreground md:text-6xl">Nascida na brasa</h2>
           <div className="mt-6 space-y-4 text-muted-foreground">
             <p>
               A Brasa Burger começou com uma chapa, uma receita de molho e a vontade de fazer o hambúrguer que a gente

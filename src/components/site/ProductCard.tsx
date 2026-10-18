@@ -22,7 +22,7 @@ export function ProductCard({ product }: { product: Product }) {
       </div>
       <div className="flex flex-1 flex-col gap-2 p-5">
         <div className="flex items-start justify-between gap-3">
-          <h3 className="min-w-0 text-xl text-cream">{product.name}</h3>
+          <h3 className="min-w-0 text-xl text-foreground">{product.name}</h3>
           <span className="shrink-0 font-bold text-primary">{formatPrice(product.price)}</span>
         </div>
         <p className="text-sm text-muted-foreground">{product.description}</p>

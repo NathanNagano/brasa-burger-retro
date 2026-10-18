@@ -17,7 +17,7 @@ export function Features() {
               <Icon className="size-6" aria-hidden />
             </div>
             <div className="min-w-0">
-              <h3 className="text-xl text-cream">{title}</h3>
+              <h3 className="text-xl text-foreground">{title}</h3>
               <p className="mt-1 text-sm text-muted-foreground">{text}</p>
             </div>
           </div>

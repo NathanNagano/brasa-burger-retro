@@ -10,18 +10,18 @@ export function ContactSection() {
     <section id="contato" aria-labelledby="contato-title" className="border-t bg-surface py-20 md:py-28">
       <div className="container-page">
         <p className="eyebrow">Contato</p>
-        <h2 id="contato-title" className="mt-2 text-4xl text-cream md:text-6xl">Vem pra brasa</h2>
+        <h2 id="contato-title" className="mt-2 text-4xl text-foreground md:text-6xl">Vem pra brasa</h2>
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           <div className="rounded-2xl border bg-background p-6 md:p-8">
             <div className="flex items-center gap-3 text-primary">
               <Clock className="size-5" aria-hidden />
-              <h3 className="text-xl text-cream">Horário de funcionamento</h3>
+              <h3 className="text-xl text-foreground">Horário de funcionamento</h3>
             </div>
             <dl className="mt-6 divide-y">
               {hours.map((h) => (
                 <div key={h.days} className="flex justify-between gap-4 py-3 text-sm">
                   <dt className="text-muted-foreground">{h.days}</dt>
-                  <dd className="font-semibold text-cream">{h.time}</dd>
+                  <dd className="font-semibold text-foreground">{h.time}</dd>
                 </div>
               ))}
             </dl>
@@ -29,9 +29,9 @@ export function ContactSection() {
           <div className="flex flex-col rounded-2xl border bg-background p-6 md:p-8">
             <div className="flex items-center gap-3 text-primary">
               <MapPin className="size-5" aria-hidden />
-              <h3 className="text-xl text-cream">Endereço</h3>
+              <h3 className="text-xl text-foreground">Endereço</h3>
             </div>
-            <address className="mt-6 not-italic text-cream">
+            <address className="mt-6 not-italic text-foreground">
               {address.street} — {address.district}
               <br />
               {address.city} / {address.state}

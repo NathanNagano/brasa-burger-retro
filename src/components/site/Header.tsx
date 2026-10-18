@@ -22,14 +22,14 @@ export function Header() {
       )}
     >
       <div className="container-page flex h-16 items-center justify-between gap-4 md:h-20">
-        <a href="#inicio" className="font-display text-2xl tracking-wide text-cream" aria-label={`${siteConfig.name} — início`}>
+        <a href="#inicio" className="font-display text-2xl tracking-wide text-foreground" aria-label={`${siteConfig.name} — início`}>
           BRASA<span className="text-primary"> BURGER</span>
         </a>
         <nav aria-label="Principal" className="hidden md:block">
           <ul className="flex items-center gap-8">
             {siteConfig.nav.map((item) => (
               <li key={item.href}>
-                <a href={item.href} className="text-sm font-semibold text-cream/80 transition-colors hover:text-primary">
+                <a href={item.href} className="text-sm font-semibold text-foreground/80 transition-colors hover:text-primary">
                   {item.label}
                 </a>
               </li>
@@ -45,7 +45,7 @@ export function Header() {
           </a>
           <button
             type="button"
-            className="inline-flex size-10 items-center justify-center rounded-lg text-cream md:hidden"
+            className="inline-flex size-10 items-center justify-center rounded-lg text-foreground md:hidden"
             aria-label={open ? "Fechar menu" : "Abrir menu"}
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
@@ -59,7 +59,7 @@ export function Header() {
           <ul className="flex flex-col gap-1">
             {siteConfig.nav.map((item) => (
               <li key={item.href}>
-                <a href={item.href} onClick={() => setOpen(false)} className="block rounded-lg px-2 py-3 font-semibold text-cream hover:bg-surface">
+                <a href={item.href} onClick={() => setOpen(false)} className="block rounded-lg px-2 py-3 font-semibold text-foreground hover:bg-surface">
                   {item.label}
                 </a>
               </li>

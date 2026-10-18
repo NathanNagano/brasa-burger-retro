@@ -16,10 +16,10 @@ export function Hero() {
       <div className="container-page">
         <div className="max-w-xl animate-rise">
           <p className="eyebrow mb-4">Hamburgueria artesanal</p>
-          <h1 className="text-5xl leading-[0.95] text-cream sm:text-6xl md:text-7xl lg:text-8xl">
+          <h1 className="text-5xl leading-[0.95] text-foreground sm:text-6xl md:text-7xl lg:text-8xl">
             O sabor que <span className="text-fire">acende</span> sua fome
           </h1>
-          <p className="mt-6 max-w-md text-base text-cream/75 md:text-lg">
+          <p className="mt-6 max-w-md text-base text-foreground/75 md:text-lg">
             Burgers na chapa bem quente, ingredientes escolhidos a dedo e aquele ponto de brasa que faz voltar.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-start">

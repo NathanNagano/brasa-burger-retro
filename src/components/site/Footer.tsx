@@ -11,7 +11,7 @@ export function Footer() {
     <footer className="border-t py-12">
       <div className="container-page grid gap-8 md:grid-cols-3 md:items-center">
         <div>
-          <p className="font-display text-2xl text-cream">
+          <p className="font-display text-2xl text-foreground">
             BRASA<span className="text-primary"> BURGER</span>
           </p>
           <p className="mt-1 text-sm text-muted-foreground">{siteConfig.tagline}</p>
@@ -20,7 +20,7 @@ export function Footer() {
           <ul className="flex flex-wrap gap-x-6 gap-y-2 md:justify-center">
             {siteConfig.nav.map((n) => (
               <li key={n.href}>
-                <a href={n.href} className="text-sm text-cream/70 hover:text-primary">{n.label}</a>
+                <a href={n.href} className="text-sm text-foreground/70 hover:text-primary">{n.label}</a>
               </li>
             ))}
           </ul>
@@ -28,7 +28,7 @@ export function Footer() {
         <ul className="flex gap-3 md:justify-end">
           {socials.map(({ label, href, icon: Icon }) => (
             <li key={label}>
-              <a href={href} aria-label={label} className="flex size-10 items-center justify-center rounded-full border text-cream/80 transition-colors hover:border-primary hover:text-primary">
+              <a href={href} aria-label={label} className="flex size-10 items-center justify-center rounded-full border text-foreground/80 transition-colors hover:border-primary hover:text-primary">
                 <Icon className="size-4" aria-hidden />
               </a>
             </li>

@@ -23,7 +23,7 @@ export function CategoryFilter({ categories, active, onChange }: Props) {
               "shrink-0 rounded-full border px-5 py-2.5 text-sm font-semibold transition-colors",
               selected
                 ? "border-primary bg-primary text-primary-foreground"
-                : "border-border bg-surface text-cream/80 hover:border-primary/60 hover:text-cream",
+                : "border-border bg-surface text-foreground/80 hover:border-primary/60 hover:text-foreground",
             )}
           >
             {c.label}
